@@ -1,0 +1,214 @@
+<style>
+    body{
+        position: relative;
+    }
+    .side_bars {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        width: 250px;
+        height: 1080px;
+        background: #312f3d;
+    }
+    .side_bars .side_logo {
+        display: block;
+        padding: 36px 14.4% 0 12%;
+    }
+    .side_bars .side_logo img {
+        width: 183px;
+        height: 58px;
+    }
+    .side_bars .side_nav {
+        width: 100%;
+    }
+    .side_bars .side_nav a {
+        display: block;
+        height: 16px;
+        line-height: 16px;
+        text-align: center;
+        color: #fff;
+        font-size: 16px;
+        margin-top: 34px;
+        padding: 0 14.4% 0 12%;
+    }
+    .side_bars .side_nav .side_active {
+        color: #fdd000;
+    }
+    .side_bars .D_code {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .side_bars .D_code .D_code_img {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 0 25.6%;
+    }
+    .side_bars .D_code .D_code_txt {
+        height: 12px;
+        padding: 10px 25.6% 0;
+        color: #ccc;
+        font-size: 12px;
+        text-align: center;
+        line-height: 12px;
+    }
+    /* style for open side */
+    .open_side{
+        display: block;
+        width: 24px;
+        height: 22px;
+        background: url(/getAHorse/portal/common/img/open_side.png) no-repeat;
+        cursor: pointer;
+        position: fixed;
+        left: 50px;
+        top: 50px;
+        z-index: 20;
+    }
+    /* style for close side */
+    .close_side{
+        position: fixed;
+        left: 280px;
+        top: 56px;
+        z-index: 1;
+        display: none;
+        width: 18px;
+        height: 24px;
+        background: url(/getAHorse/portal/common/img/close_side.png) no-repeat;
+        cursor: pointer;
+        z-index: 20;
+    }
+    .inner{
+        overflow: hidden;
+        margin: 240px auto 0;
+        color: #fff;
+        font-size: 12px;
+    }
+    @media screen and (max-width: 1600px){
+        .inner{
+            margin: 135px auto 0;
+        }
+        .side_bars .side_logo {
+            padding: 28px 14.4% 0 12%;
+        }
+        .side_bars .side_nav a{
+            margin-top:22px;
+            font-size: 14px;
+        }
+        .side_bars .D_code {
+            padding-top: 30px;
+        }
+    }
+    @media screen and (max-width: 1400px){
+        .side_bars .side_nav a{
+            margin-top:18px;
+            font-size: 14px;
+        }
+        .side_bars .D_code {
+            padding-top: 20px;
+        }
+        .side_bars .D_code .D_code_img {
+            padding: 0 32.6%;
+        }
+    }
+</style>
+<body>
+<div class="side_bars">
+    <a class="side_logo" href="javascript: void(0);">
+        <img src="/getAHorse/portal/main/img/sideLogo.png" alt="小马快车" >
+    </a>
+    <div class="side_nav">
+        <ul>
+            <li ><a href="/getAHorse/portal/index.html" class="index">首页</a></li>
+            <li ><a class="xmecology" href="/getAHorse/portal/main/xmecology.html">小马生态</a></li>
+            <li ><a class="xmbus" href="/getAHorse/portal/main/xmbus.html">小马巴士</a></li>
+            <li><a class="xmjourney" href="/getAHorse/portal/main/xmjourney.html">小马出游</a></li>
+            <li><a class="xmamplego" href="/getAHorse/portal/main/xmamplego.html">小马优行</a></li>
+            <li><a class="xmdak" href="/getAHorse/portal/main/xmdak.html">小马驿站</a></li>
+            <li><a class="privateTailor" href="/getAHorse/portal/main/privateTailor.html">私人订制</a></li>
+            <li><a class="coop" href="/getAHorse/portal/main/coop.html">广告合作</a></li>
+            <li><a class="Franchise" href="/getAHorse/portal/main/Franchise.html">全面加盟</a></li>
+            <li><a class="carbanking" href="/getAHorse/portal/main/carbanking.html">汽车金融</a></li>
+            <li><a class="information" href="/getAHorse/portal/main/information.html">小马资讯</a></li>
+            <li><a class="contactUs" href="/getAHorse/portal/main/contactUs.html">联系小马</a></li>
+            <li><a class="jobOffer" href="/getAHorse/portal/main/jobOffer.html">工作机会</a></li>
+        </ul>
+    </div>
+    <div class="D_code">
+        <img src="/getAHorse/portal/main/img/D_code.png" alt="二维码" class="D_code_img">
+        <p class="D_code_txt">关注我们</p>
+    </div>
+</div>
+<div class="close_side"></div>
+<div class="open_side"></div>
+<script>
+//    var clientHeight = document.body.scrollHeight;
+//    console.log(clientHeight)
+    // 导航栏收缩
+    var innerMl = 0;
+    var _close_side = $('.close_side');
+    var _open_side = $('.open_side');
+    var _side_bars = $('.side_bars');
+    _close_side.click(function(){
+        _side_bars.fadeOut('slow');
+        _open_side.fadeIn('slow');
+        _close_side.fadeOut('slow');
+        setTimeout(function () {
+            $("#inner").css('margin-left',innerMl)
+        },300);
+        setTimeout(function () {
+            $("#title").css({
+                'margin-left' : '0px',
+                'margin-top' : '0px'
+            });
+        },300)
+
+    });
+    _open_side.click(function(){
+        _side_bars.fadeIn('slow');
+        _open_side.fadeOut('slow');
+        _close_side.fadeIn('slow');
+        var sidebarWidth = $(".side_bars").width();
+        var availWidth = document.body.clientWidth -sidebarWidth;
+        var innerWidth = $("#inner").width();
+        var conWidth =  availWidth - innerWidth;
+        innerMl = $("#inner").css('margin-left');
+        $("#inner").css('margin-left',250 + Number(conWidth/2));
+        $("#title").css('margin-left',200 );
+        $("#title").css('margin-top',5);
+    });
+
+    var url = window.location.href ; //获取url地址
+    if(url.indexOf("index") >= 0){        //判断获取的地址字符串中有没有  url字符串 有就执行添加side_active类，a字体颜色改变
+        $(".index").addClass("side_active")
+    }else if(url.indexOf("xmecology") >= 0){
+        $(".xmecology").addClass("side_active")
+    }else if(url.indexOf("xmbus") >= 0){
+        $(".xmbus").addClass("side_active")
+    }else if(url.indexOf("xmjourney") >= 0){
+        $(".xmjourney").addClass("side_active")
+    }else if(url.indexOf("xmamplego") >= 0){
+        $(".xmamplego").addClass("side_active")
+    }else if(url.indexOf("xmdak") >= 0){
+        $(".xmdak").addClass("side_active")
+    }else if(url.indexOf("privateTailor") >= 0){
+        $(".privateTailor").addClass("side_active")
+    }else if(url.indexOf("coop") >= 0){
+        $(".coop").addClass("side_active")
+    }else if(url.indexOf("Franchise") >= 0){
+        $(".Franchise").addClass("side_active")
+    }else if(url.indexOf("carbanking") >= 0){
+        $(".carbanking").addClass("side_active")
+    }else if(url.indexOf("information") >= 0){
+        $(".information").addClass("side_active")
+    }else if(url.indexOf("contactUs") >= 0){
+        $(".contactUs").addClass("side_active")
+    }else if(url.indexOf("jobOffer") >= 0){
+        $(".jobOffer").addClass("side_active")
+    }
+
+</script>
+</body>

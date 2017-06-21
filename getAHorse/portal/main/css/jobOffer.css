@@ -1,0 +1,295 @@
+
+html, body {
+    background-color: #24222d;
+}
+.inner{
+    margin: 240px auto 0;
+    overflow: visible!important;
+    color: #fff;
+    position: relative;
+}
+
+/***********标题样式***********/
+.title {
+    height: 24px;
+    line-height: 24px;
+    position: fixed;
+    left: 105px;
+    top: 50px;
+    z-index: 3;
+    width: 400px;
+}
+.title h2 {
+    float: left;
+    font-size: 20px;
+    color: #fff;
+}
+.title .next {
+    width: 70px;
+    height: 26px;
+    line-height: 24px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    float: left;
+    margin-left: 20px;
+}
+.title .next a {
+    display: block;
+    width: 70px;
+    height: 26px;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.title .next .m-active {
+    color: #fdd000;
+    border: 1px solid #fdd000;
+}
+.title a:hover {
+    color: #fdd000;
+    border: 1px solid #fdd000;
+}
+
+
+
+
+
+
+
+
+
+
+
+.job{
+    width: 550px;
+    margin: 0 auto;
+}
+.list_even {
+    width: 550px;
+    height: 75px;
+    padding-top: 25px;
+    cursor: pointer;
+}
+.list_even:hover {
+    background-color: #e9a904;
+}
+.list_even:hover a{
+    color: #fff;
+}
+.even_li {
+    width: 240px;
+    height: 50px;
+    margin-left: 100px;
+    border-left : 2px solid #fff;
+}
+.even_li p {
+    font-size: 12px;
+    color: #fff;
+    margin-left: 30px;
+}
+.even_li p.first {
+    font-size: 16px;
+    margin-bottom: 15px;
+    height: 18px;
+    line-height: 18px;
+}
+.even_li p a{
+     color: #999999;
+     font-size: 22px;
+     margin-left: 20px;
+ }
+.even_li p span{
+    margin-right: 40px;
+}
+.job_code {
+    width: 445px;
+    margin-top: 130px;
+}
+.job_code h3{
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.job_code h4{
+
+}
+.job_code .code_zl {
+    width: 192px;
+    height: 192px;
+    margin: 0 60px 20px 0;
+    float: left;
+}
+.job_code .code_qc {
+    width: 192px;
+    height: 192px;
+    float: right;
+    margin-bottom: 20px;
+}
+.job_code p {
+    font-size: 12px;
+    color: #ccc;
+    margin-left: 72px;
+}
+.job_code p span {
+    margin-left: 205px;
+}
+.positionBox {
+    width: 750px;
+    height: 448px;
+    position: absolute;
+    left: 346px;
+    top: 0;
+    z-index:10;
+    color: #ccc;
+}
+.boxCont {
+    width: 750px;
+    height: 448px;
+    padding: 40px 0 0 40px;
+    background-color: #3e3b4d;
+    display: none;
+}
+.active {
+    background-color: #e9a904;
+}
+.block {
+    display: block;
+}
+.boxCont h2{
+    margin-bottom: 15px;
+}
+.boxCont .p {
+    margin-bottom: 30px;
+    padding-right: 10px;
+
+}
+.boxCont p {
+    /*height: 24px;*/
+    line-height:20px;
+    font-size: 12px;
+
+}
+
+
+
+@media screen and (max-width: 1600px){
+    .inner{
+        margin: 180px auto 0;
+    }
+
+    .job{
+        width: 350px;
+        margin: 0 auto;
+    }
+    .list_even {
+        width: 350px;
+        height: 60px;
+        padding-top: 10px;
+        cursor: pointer;
+    }
+    .list_even:hover {
+        background-color: #e9a904;
+    }
+    .list_even:hover a{
+        color: #fff;
+    }
+    .even_li {
+        width: 240px;
+        height: 50px;
+        margin-left: 60px;
+        border-left : 2px solid #fff;
+    }
+    .even_li p {
+        /*font-size: 12px;*/
+        color: #fff;
+        margin-left: 20px;
+    }
+    .even_li p.first {
+        font-size: 14px;
+        margin-bottom: 15px;
+        height: 18px;
+        line-height: 18px;
+    }
+    .even_li p a{
+        color: #999999;
+        font-size: 18px;
+        margin-left: 20px;
+    }
+    .even_li p span{
+        margin-right: 20px;
+    }
+
+    .job_code {
+        width: 260px;
+        margin-top: 90px;
+    }
+    .job_code h3{
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+    #job_code .code_zl,
+    #job_code .code_qc {
+        width: 100px;
+        height: 100px;
+    }
+    .job_code p {
+        font-size: 12px;
+        color: #ccc;
+        margin-left: 30px;
+    }
+    .job_code p span {
+        margin-left: 100px;
+    }
+
+    .positionBox {
+        width: 750px;
+        height: 448px;
+        position: absolute;
+        left: 346px;
+        top: 0;
+        z-index:10;
+        color: #ccc;
+    }
+    .boxCont {
+        width: 500px;
+        height: 448px;
+        padding: 20px 0 0 20px;
+        background-color: #3e3b4d;
+        display: none;
+    }
+    .active {
+        background-color: #e9a904;
+    }
+    .block {
+        display: block;
+    }
+    .boxCont h2{
+        margin-bottom: 15px;
+    }
+    .boxCont .p {
+        margin-bottom: 12px;
+    }
+    .boxCont p {
+        /*height: 24px;*/
+        font-size: 12px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,105 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+
+body{
+    background: #24222d;
+}
+.inner{
+    overflow: hidden;
+    margin: 240px auto 0;
+    color: #fff;
+    font-size: 30px;
+}
+.inner_l{
+    width: 290px;
+}
+.inner_l h2{
+    font-size: 20px;
+    color: #fff;
+}
+
+/***********标题样式***********/
+.title {
+    height: 24px;
+    line-height: 24px;
+    position: fixed;
+    left: 105px;
+    top: 50px;
+    z-index: 3;
+    width: 400px;
+}
+.title h2 {
+    float: left;
+    font-size: 20px;
+    color: #fff;
+}
+.title .next {
+    width: 70px;
+    height: 26px;
+    line-height: 24px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    float: left;
+    margin-left: 20px;
+}
+.title .next a {
+    display: block;
+    width: 70px;
+    height: 26px;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+
+
+
+.des_p{
+    margin-top: 190px;
+}
+.des_p p{
+    font-size: 12px;
+    line-height:12px;
+    height:22px;
+}
+.des_p hr{
+    width: 80px;
+    float: left;
+    margin-top:22px;
+    border-bottom: 0 none;
+}
+.ques_btn{
+    display: block;
+    width: 182px;
+    height:42px;
+    color: #fdd000;
+    border: 1px solid #fdd000;
+    line-height:42px;
+    text-align: center;
+    font-size: 12px;
+    margin-top:15px;
+}
+@media screen and (max-width: 1600px){
+    .inner{
+        margin: 180px auto 0;
+    }
+
+    #allmap{
+        width: 600px!important;
+    }
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,123 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    background: #24222d;
+}
+.inner{
+    overflow: hidden;
+    margin: 240px auto 0;
+    color: #fff;
+}
+.inner h2{
+    font-size: 30px;
+}
+
+/***********标题样式***********/
+.title {
+    height: 24px;
+    line-height: 24px;
+    position: fixed;
+    left: 105px;
+    top: 50px;
+    z-index: 3;
+    width: 400px;
+}
+.title h2 {
+    float: left;
+    font-size: 20px;
+    color: #fff;
+}
+.title .next {
+    width: 70px;
+    height: 26px;
+    line-height: 24px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    float: left;
+    margin-left: 20px;
+}
+.title .next a {
+    display: block;
+    width: 70px;
+    height: 26px;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.title .next .m-active {
+    color: #fdd000;
+    border: 1px solid #fdd000;
+}
+.title a:hover {
+    color: #fdd000;
+    border: 1px solid #fdd000;
+}
+
+
+.inner_l{width: 400px;}
+.des_p{
+    margin-top: 190px;
+}
+.des_p p{
+    font-size: 12px;
+    line-height:12px;
+    height:22px;
+    color: #cccccc;
+}
+.des_p p.font_s14{
+    font-size: 14px;
+}
+.des_p p em{
+    color: #fff;
+}
+.des_p hr{
+    width: 80px;
+    float: left;
+    margin-top:22px;
+    border-bottom: 0 none;
+}
+.ques_btn{
+    display: block;
+    width: 182px;
+    height:42px;
+    color: #fdd000;
+    border: 1px solid #fdd000;
+    line-height:42px;
+    text-align: center;
+    font-size: 12px;
+    margin-top:15px;
+}
+@media screen and (max-width: 1600px){
+    .inner{
+        margin: 180px auto 0;
+    }
+    .inner_l {
+        width: 260px;
+    }
+    .inner_l h2{
+        font-size: 20px;
+    }
+    .inner_r{
+        width: 700px;
+    }
+}
+.flash4{width:700px;height:430px;margin:0px auto;margin-bottom:20px;position:relative;}
+.flash4 ul li{width:128px;height:430px;border-left:1px solid #000;position:relative;overflow:hidden;float:left;}
+.flash4 ul li .imgTop img{opacity:0.4;}
+.flash4 ul li .imgTop img.tm{opacity:1;}
+.flash4 ul li .imgCon{width:311px;height:430px;}
+.flash4 ul li .imgBot{width:271px;position: absolute;left: 20px;top:65px;line-height: 22px;}
+.flash4 ul li.first{width:128px;}
+.flash4 ul li.first_active{width:311px;}
+
+
+
+
+
+
+
+
+

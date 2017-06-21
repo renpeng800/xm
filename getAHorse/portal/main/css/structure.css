@@ -1,0 +1,86 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  background: #24222d;
+}
+#inner {
+  overflow: hidden;
+  margin: 100px auto 20px;
+  width: 1499px;
+  height: 844px;
+
+  /*background: url("../img/structure.png") no-repeat center center;*/
+  /*background-size: 100% 100%;*/
+  /*filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/structure.png', sizingMethod='scale');*/
+  /*!*兼容ie8以下*!*/
+
+}
+.title {
+  height: 24px;
+  line-height: 24px;
+  position: fixed;
+  left: 105px;
+  top: 50px;
+  z-index: 3;
+  width: 400px;
+}
+.next{
+  width: 70px;
+  height: 26px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  float: left;
+  margin-left: 20px;
+
+}
+.title .next a {
+  display: block;
+  width: 70px;
+  height: 26px;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.title .next .m-active {
+  color: #fdd000;
+  border: 1px solid #fdd000;
+}
+.title a:hover {
+  color: #fdd000;
+  border: 1px solid #fdd000;
+}
+
+@media screen and (max-width: 1611px){
+  /*#inner{*/
+    /*margin: 135px 0 20px 155px!important;*/
+
+    /*width: 1200px!important;*/
+    /*height: 800px!important;*/
+    /*!*overflow: hidden;*!*/
+    /*!*width: 1499px;*!*/
+    /*!*height: 844px;*!*/
+    /*!*background: url("../img/structure.png") no-repeat center center;*!*/
+    /*!*background-size: 100% 100%;*!*/
+    /*!*filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/structure.png', sizingMethod='scale');*!*/
+    /*!*!*兼容ie8以下*!*!*/
+    /*!*margin: 135px 135px 0 135px;*!*/
+  /*}*/
+  /*#inner img{*/
+    /*width: 1200px;*/
+    /*height: 700px;*/
+  /*}*/
+    .imgs{
+      width: 1200px!important;
+      height: 748px!important;
+    }
+  .imgs img{
+    width: 100%;
+    height: 100%;
+  }
+
+}
+

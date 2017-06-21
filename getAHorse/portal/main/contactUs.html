@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="robots" content="nofollow">
+    <meta name="keywords" content="小马,小马快车,小马租车,旅游租车,自驾租车,租车价格,包车,企业租车,汽车租赁,汽车金融,专车接送" />
+    <meta name="description" content="小马快车（xiaomakuaiche.com）为您提供自驾租车/专车价格及预定服务，在全国多个城市开设了直营租车网点，提供自驾租车，商务租车，专车接送，接送机专车、定制包车、通勤班车等满足各种用户需求。选择小马快车，让您可以随时随地享受无忧的用车服务。" />
+    <title>联系小马</title>
+    <link rel="stylesheet" href="/getAHorse/portal/common/css/common.css">
+    <link rel="stylesheet" href="/getAHorse/portal/main/css/contactUs.css">
+    <link rel="stylesheet" href="css/baiduMap.css" />
+    <script src="../common/js/jquery_v1.11.3.js"></script>
+    <script type="text/javascript" src="//api.map.baidu.com/api?v=2.0&ak=T6flRTxjUaonG0F3LZMHoqv59B6rbesY"></script>
+
+    <script type="text/javascript" src="//api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="/getAHorse/portal/common/js/css3-mediaqueries.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--引入side_bar-->
+<div class="side"></div>
+<div class="title" id="title">
+    <h2>联系小马</h2>
+</div>
+
+<!--<div id="content">-->
+    <div class="inner clearfix" id="inner">
+        <div class="inner_l fl">
+            <h2>小马快车&nbsp;&nbsp;&nbsp;慢享生活</h2>
+            <h2>移动的品质生活平台</h2>
+            <div class="des_p clearfix">
+                <p>地址 : 北京市朝阳区望京SOHO T2-2802</p>
+                <p>电子邮箱：yangxishan@benlook.com</p>
+                <p>电话 : 010-53915244</p>
+                <hr class="fl">
+            </div>
+            <a href="#" class="ques_btn">我要咨询</a>
+        </div>
+        <div class="inner_r fl" id="allmap" style="width: 750px;height: 430px; margin:5px 0 0 58px;"></div>
+    </div>
+
+
+<!--</div>-->
+<script>
+    $('.side').load('/getAHorse/portal/common/side_bars.html');
+    $(function(){
+        $("#inner").width(($(".inner_l ").width()) + ($(".inner_r").width()) +58 )
+        // 百度地图API功能
+        var map = new BMap.Map("allmap");           // 创建Map实例
+        map.addControl(new BMap.MapTypeControl());  // 添加地图类型控件
+        map.setCurrentCity("北京");                  // 设置地图显示的城市 此项是必须设置的
+        var point = new BMap.Point(116.48691,40.003042);
+        map.enableScrollWheelZoom(true);            // 开启鼠标滚轮缩放
+        map.centerAndZoom(point, 16);
+//        var marker = new BMap.Marker(point);      // 创建标注
+//        map.addOverlay(marker);                   // 将标注添加到地图中
+
+        var content = '<div style="margin:0;line-height:20px;padding:2px;">' +
+            '地址：北京市朝阳区望京SOHO T2-2802<br/>' +
+            '联系电话：010-53915244'+
+            '</div>';
+        //创建检索信息窗口对象
+        var searchInfoWindow = null;
+        searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
+            title  : "北京本色新能源汽车服务有限公司",      //标题
+            width  : 310,             //宽度
+            height : 50,              //高度
+            panel  : "panel",         //检索结果面板
+            enableAutoPan : true,     //自动平移
+            searchTypes   :[
+                BMAPLIB_TAB_SEARCH,   //周边检索
+                BMAPLIB_TAB_TO_HERE,  //到这里去
+                BMAPLIB_TAB_FROM_HERE //从这里出发
+            ]
+        });
+        var marker = new BMap.Marker(point); //创建marker对象
+        marker.enableDragging(); //marker可拖拽
+//        marker.addEventListener("click", function(e){
+        searchInfoWindow.open(marker);
+//        })
+        map.addOverlay(marker); //在地图中添加marker
+    })
+
+</script>
+</body>
+</html>

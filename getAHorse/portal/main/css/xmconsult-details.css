@@ -1,0 +1,155 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    background: #24222d;
+}
+.title {
+    height: 24px;
+    line-height: 24px;
+    position: fixed;
+    left: 105px;
+    top: 50px;
+    z-index: 3;
+}
+.title h2 {
+    font-size: 20px;
+    color: #fff;
+    float: left;
+}
+#menu {
+    height: 24px;
+    float: left;
+}
+.title .prev,
+.title .next,
+.title .return {
+    width: 54px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    float: left;
+    margin-left: 20px;
+}
+.title a {
+    display: inline-block;
+    width: 54px;
+    height: 24px;
+    border: 1px solid #929196;
+}
+.title a:hover {
+    color: #fdd000;
+    border: 1px solid #fdd000;
+}
+.detail_inner{
+    overflow: hidden;
+    margin: 0 auto;
+    color: #fff;
+}
+.bigBox {
+    width: 1002px;
+    position: relative;
+}
+.detail_outer {
+    width: 1002px;
+    overflow: hidden;
+    position: relative;
+}
+.outer_ul {
+    position: absolute;
+    top: 0;
+    height: 1000%;
+}
+.outer_li {
+    width: 1002px;
+    /*height: 800px;*/
+    overflow: hidden;
+}
+.active {
+    width: 1002px;
+    height: 800px;
+}
+.outer_li h2 {
+    text-align: center;
+    height: 16px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.outer_li h5 {
+    height: 24px;
+    font-size: 12px;
+    color: #ccc;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.outer_li .image {
+    width: 600px;
+    height: 400px;
+}
+.outer_li p {
+    font-size: 12px;
+    color: #ccc;
+    line-height: 25px;
+    margin-bottom: 35px;
+}
+/* 角标 */
+.icon_pre,
+.icon_next {
+    width: 24px;
+    height: 11px;
+    background: url(/getAHorse/portal/main/img/arrow_pre.png) no-repeat;
+}
+.goup,.godown{
+    width: 23px;
+    height: 13px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    margin-top: -13px;
+}
+.icon_next {
+    width: 24px;
+    height: 11px;
+    background: url(/getAHorse/portal/main/img/arrow_next.png) no-repeat;
+}
+.godown{
+    width: 23px;
+    height: 13px;
+    position: absolute;
+    left: 50%;
+    top: auto;
+    bottom: 68px;
+    margin-bottom: -35px;
+}
+.goup{
+    bottom: auto;
+    top:30px;
+}
+.image {
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+.image img{
+    display: inline-block;
+}
+
+#fp-nav.right {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+

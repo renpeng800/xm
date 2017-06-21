@@ -1,0 +1,144 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    background: #24222d;
+}
+#inner {
+    margin: 200px auto 0;
+    overflow: hidden;
+}
+.title {
+    height: 24px;
+    line-height: 24px;
+    position: fixed;
+    left: 105px;
+    top: 50px;
+    z-index: 3;
+    width: 400px;
+}
+.next{
+    width: 70px;
+    height: 26px;
+    line-height: 24px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    float: left;
+    margin-left: 20px;
+
+}
+.title .next a {
+    display: block;
+    width: 70px;
+    height: 26px;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.title .next .m-active {
+    color: #fdd000;
+    border: 1px solid #fdd000;
+}
+.title a:hover {
+    color: #fdd000;
+    border: 1px solid #fdd000;
+}
+
+.hardware-main{
+    margin: 0 auto;
+    width: 1098px;
+    height: 642px;
+
+}
+.hardware-left{
+    width: 202px;
+    height: 642px;
+
+    float: left;
+}
+.hardware-right{
+    width: 202px;
+    height: 642px;
+
+    float: left;
+}
+.hardware-body{
+    width: 694px;
+    height: 642px;
+    float: left;
+    position: relative;
+    padding: 0 28px;
+}
+.hardware-body img{
+    width: 310px;
+    height: 310px;
+}
+.a1{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.a2{
+    position: relative;
+    top: 0;
+    left: 20px;
+}
+.a3{
+    position: relative;
+    top: 17px;
+    left: 0;
+}
+.a4{
+    position: relative;
+    top: 17px;
+    left: 20px;
+}
+.a5{
+    position: relative;
+    top: -457px;
+    left: 167px;
+}
+.top{
+    height: 335px;
+    width: 202px;
+}
+.hardware-l h3{
+    font-size: 18px;
+    color: #fff;
+    line-height:30px;
+    margin-bottom: 8px;
+}
+.hardware-l p{
+    font-size: 12px;
+    color: #ccc;
+    line-height:24px;
+}
+@media screen and (max-width: 1600px){
+    #inner{
+        margin: 135px 0 0 155px;
+    }
+    .hardware-body{
+        width:642px;
+        padding: 0;
+    }
+    .hardware-left ,.hardware-right{
+        width: 120px!important;
+    }
+    .top{
+        width: 120px!important;
+    }
+    .bottom{
+        width: 120px!important;
+    }
+
+}
+
+
+
+
+
+
+
+

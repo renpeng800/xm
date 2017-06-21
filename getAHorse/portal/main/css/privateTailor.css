@@ -1,0 +1,167 @@
+/*广告合作*/
+html, body {
+    background-color: #24222d;
+}
+
+
+
+
+.inner{
+    margin: 240px auto 0;
+    overflow: hidden;
+}
+
+
+/***********标题样式***********/
+.title {
+    height: 24px;
+    line-height: 24px;
+    position: fixed;
+    left: 105px;
+    top: 50px;
+    z-index: 3;
+    width: 400px;
+}
+.title h2 {
+    float: left;
+    font-size: 20px;
+    color: #fff;
+}
+.title .next {
+    width: 70px;
+    height: 26px;
+    line-height: 24px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    float: left;
+    margin-left: 20px;
+}
+.title .next a {
+    display: block;
+    width: 70px;
+    height: 26px;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.title .next .m-active {
+    color: #fdd000;
+    border: 1px solid #fdd000;
+}
+.title a:hover {
+    color: #fdd000;
+    border: 1px solid #fdd000;
+}
+
+
+
+
+.private-main{
+    width: 1098px;
+}
+.private-main ul li {
+    float: left;
+    margin-right: 33px;
+    position: relative;
+    width: 248px;
+    height: 434px;
+}
+.fast-li{
+    background: url("/getAHorse/portal/main/img/private_Enjoy.png");
+    background-size: 100% 100%;
+}
+.last-li{
+    background: url("/getAHorse/portal/main/img/private_min.png");
+    background-size:  100% 100%;
+}
+.fast-li-two{
+    background: url("/getAHorse/portal/main/img/private_date.png");
+    background-size:  100% 100%;
+}
+.fast-li-three{
+    background: url("/getAHorse/portal/main/img/private_major.png");
+    background-size:  100% 100%;
+}
+.private-main .last-li{
+    margin-right: 0;
+}
+.private-main ul li img{
+    vertical-align: middle;
+}
+.private-main ul li .list-show{
+
+    width: 250px;
+    height: 50px;
+    background:#e9a904;
+    background:rgba(233, 169, 4, 0.6);
+    line-height:50px;
+    filter:Alpha(opacity=60);
+    position: absolute;
+    left:0;
+    bottom: 0;
+    font-size: 16px;
+    text-align: center;
+}
+.private-main ul li .list-show i{
+    position:relative;
+}
+.list-hide{
+    background-color: #000;
+    background-color: rgba(0,0,0,0.6);
+    filter:Alpha(opacity=60);
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 248px;
+    height: 434px;
+}
+.list-content{
+    width: 248px;
+    font-size: 14px;
+    color: #fff;
+    padding:15px 10px 0 10px;
+    position: relative;
+    box-sizing: border-box;
+}
+.list-hide a{
+    display: block;
+    text-align: center;
+    line-height: 42px;
+    height: 42px;
+    width: 168px;
+    position: absolute;
+    bottom: 28px;
+    left: 50%;
+    margin-left: -84px;
+    font-size: 12px;
+    color: #fdd000;
+    border: 1px solid #fdd000;
+}
+@media screen and (max-width: 1600px){
+    .private-main{
+        width: 945px;
+    }
+    .inner{
+        margin: 180px auto 0;
+    }
+    li{
+        width: 210px!important;
+    }
+
+    li div{
+        width: 210px!important;
+    }
+    .list-hide a{
+        width: 80px!important;
+        margin-left: -40px!important;
+    }
+}
+
+
+
+
+
+
+
+
+

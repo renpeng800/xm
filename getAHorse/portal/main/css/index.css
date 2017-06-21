@@ -1,0 +1,214 @@
+@charset "UTF-8";
+@import url(/getAHorse/portal/common/css/common.css);
+._box, .introduce, .introduce .shortcut_enter li a {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: #24222d;
+}
+
+.clo1 {
+  width: 44.11458%;
+  height: 100%;
+  background: #24222d;
+}
+
+.clo2 {
+  width: 55.88542%;
+  height: 100%;
+  background: #e9a904;
+}
+
+#inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.txt_show {
+  width: 436px;
+  height: 1080px;
+  background: #24222d;
+}
+
+.introduce {
+  cursor: default;
+  width: 186px;
+  height: 100%;
+  padding-top: 82px;
+  margin-right: 4%;
+}
+.introduce .introduce_logo {
+  width: 98%;
+  margin-bottom: 34px;
+}
+.introduce .introduce_txt {
+  height: 570px;
+}
+.introduce .introduce_txt > p {
+  line-height: 18px;
+  color: #ccc;
+  font-size: 12px;
+}
+.introduce .line {
+  width: 80px;
+  border-top: 1px solid #737c85;
+  margin-bottom: 30px;
+}
+.introduce .shortcut_enter {
+  overflow: hidden;
+}
+.introduce .shortcut_enter li {
+  float: left;
+}
+.introduce .shortcut_enter li a {
+  display: block;
+  width: 65px;
+  height: 25px;
+  border: 1px solid #737c85;
+  color: #ccc;
+  font-size: 12px;
+  line-height: 23px;
+  text-align: center;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+.introduce .shortcut_enter li .shortcut_active {
+  color: #fdd000;
+  border: 1px solid #fdd000;
+  margin-left: 10px;
+}
+
+.fixation {
+  width: 216px;
+  padding-top: 82px;
+  margin-right: 1px;
+}
+.fixation img {
+  width: 216px;
+}
+.fixation .img_common {
+  margin-bottom: 6px;
+}
+
+.img_show {
+  width: 662px;
+  height: 1080px;
+  background: #e9a904;
+}
+
+.grid {
+  position: relative;
+  margin-left: 3px;
+  padding-top: 79px;
+}
+.grid .grid-item {
+  float: left;
+  width: 216px;
+  height: 219px;
+  margin: 3px;
+}
+.grid .grid-item--width2 {
+  width: 435px;
+}
+.grid .grid-item--width2 > img {
+  width: 435px;
+}
+.grid .grid-item--height2 {
+  height: 441px;
+}
+.grid .grid-item--height3 {
+  height: 381px;
+}
+.grid .items1 {
+  position: absolute;
+  left: 3px;
+  top: 82px;
+}
+.grid .items2 {
+  position: absolute;
+  left: 222px;
+  top: 82px;
+}
+.grid .items3 {
+  position: absolute;
+  left: 443px;
+  top: 82px;
+}
+.grid .items4 {
+  position: absolute;
+  left: 3px;
+  top: 306px;
+}
+.grid .items5 {
+  position: absolute;
+  left: 444px;
+  top: 306px;
+}
+.grid .items6 {
+  position: absolute;
+  left: 3px;
+  top: 532px;
+}
+.grid .items7 {
+  position: absolute;
+  left: 444px;
+  top: 532px;
+}
+
+.img_common {
+  width: 213px;
+  height: 219px;
+}
+
+/*.infinite {
+  // 重复执行动画
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}*/
+.pulse {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}
+
+@keyframes pulse {
+  50% {
+    -moz-transform: scale3d(1.03, 1.03, 1.03);
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    -o-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+}
+.pulse {
+  -moz-animation-name: pulse;
+  -webkit-animation-name: pulse;
+  -o-animation-name: pulse;
+  animation-name: pulse;
+}
+
+.pulse__ {
+  -moz-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.shortcut_enter li a:hover {
+  color: #fdd000;
+  border: 1px solid #fdd000;
+}
+/*# sourceMappingURL=index.css.map */

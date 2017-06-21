@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="robots" content="nofollow">
+    <title>全面加盟 合作共赢-小马快车</title>
+    <link rel="stylesheet" href="/getAHorse/portal/common/css/common.css">
+    <style>
+        *{
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        body{
+            background: #24222d;
+        }
+        .inner{
+            overflow: hidden;
+            margin: 240px auto 0;
+            color: #fff;
+        }
+        .main{
+            width: 781px;
+            height: 500px;
+            margin:0 auto;
+        }
+        .content{
+            margin-top: 25px;
+            text-align: center;
+        }
+        .content p{
+            font-size: 14px;
+            margin-bottom:10px;
+            color: #ccc;
+        }
+        .content .settime{
+            font-size: 12px;
+            color: #e9a904;
+        }
+        .btn{
+            margin-top:30px;
+            text-align: center;
+        }
+        .btt{
+            display: inline-block;
+            width: 120px;
+            height: 40px;
+            border: 1px solid #929196;
+            color: #fff;
+            font-size: 16px;
+            line-height: 40px;
+        }
+
+        .btt a:hover {
+            color: #fdd000;
+            border: 1px solid #fdd000;
+        }
+        .indexto{
+            margin-right:80px;
+        }
+
+
+
+    </style>
+    <script src="../common/js/jquery_v1.11.3.js"></script>
+    <!--[if lt IE 9]>
+    <script src="/getAHorse/portal/common/js/css3-mediaqueries.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!--引入side_bar-->
+<div class="side"></div>
+<!--<div id="content">-->
+<div class="inner clearfix" id="inner">
+
+    <div class="main">
+        <img src="./img/404.png" alt="404">
+        <div class="content">
+        <p>您正在查看的页面可能已删除、更名或暂时不可用</p>
+        <p>请确保浏览器中显示网站网址到拼写和格式正确无误</p>
+        <p class="settime"><span>5</span>s后返回首页</p>
+
+        </div>
+        <div class="btn">
+            <a href="/" class="indexto btt">返回首页</a>
+            <a href="javascript:history.back(-1);" class="back btt">返回上一页</a>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+<!--</div>-->
+<script>
+    $('.side').load('/getAHorse/portal/common/side_bars.html');
+//        $("#inner").width(($(".inner_l ").width()) + ($(".inner_r").width()));
+
+    $(function(){
+        var num = 5;
+        var time = setInterval(function(){
+            num--;
+            $('.settime span').text(num);
+            if( num == 0){
+                window.location.href = '/';
+                clearInterval(time);
+            }
+        },1000);
+    });
+
+
+
+
+</script>
+</body>
+</html>

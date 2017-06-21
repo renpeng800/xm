@@ -1,0 +1,201 @@
+@import url(/getAHorse/portal/common/css/common.css);
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #24222d;
+}
+
+#inner {
+  margin-top: 0;
+  margin: auto;
+  overflow: visible;
+}
+
+
+
+/***********标题样式***********/
+.title {
+  height: 24px;
+  line-height: 24px;
+  position: fixed;
+  left: 105px;
+  top: 50px;
+  z-index: 3;
+  width: 400px;
+}
+.title h2 {
+  float: left;
+  font-size: 20px;
+  color: #fff;
+}
+.title .next {
+  width: 70px;
+  height: 26px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  float: left;
+  margin-left: 20px;
+}
+.title .next a {
+  display: block;
+  width: 70px;
+  height: 26px;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.title .next .m-active {
+  color: #fdd000;
+  border: 1px solid #fdd000;
+}
+.title a:hover {
+  color: #fdd000;
+  border: 1px solid #fdd000;
+}
+
+
+
+
+
+
+.content {
+  width: 1098px;
+  height: 430px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.loop_information {
+  position: relative;
+  width: 1098px;
+  height: 430px;
+  overflow: hidden;
+}
+
+.loop_items {
+  position: absolute;
+  left: 0;
+  width: 2264px;
+}
+
+.loop_item {
+  float: left;
+  width: 250px;
+  height: 430px;
+  margin-right: 33px;
+  position: relative;
+}
+.loop_item > img {
+  width: 100%;
+  height: 100%;
+}
+
+.loop_item_last {
+  margin-right: 0;
+}
+
+.loop_info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 78px;
+  background: #e9a904;
+  color: #fff;
+  font-size: 12px;
+  line-height: 12px;
+}
+.loop_info h3 {
+  font-size: 14px;
+  line-height: 14px;
+  display: inline-block;
+  margin-top: 17px;
+  margin-left: 15px;
+}
+.loop_info .info_time {
+  display: inline-block;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.loop_info .info_txt {
+  width: 100%;
+  text-align: center;
+}
+
+.prev {
+  position: absolute;
+  top: 50%;
+  left: -80px;
+  margin-top: -23px;
+  width: 46px;
+  height: 45px;
+  z-index: 13;
+}
+
+.next {
+  position: absolute;
+  top: 50%;
+  right: -80px;
+  width: 46px;
+  height: 45px;
+  z-index: 15;
+}
+
+.prev_s {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: -80px;
+  margin-top: -23px;
+  width: 46px;
+  height: 45px;
+  z-index: 13;
+  background: #24222d;
+}
+
+.next_s {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: -80px;
+  width: 46px;
+  height: 45px;
+  z-index: 15;
+  background: #24222d;
+}
+
+@media screen and (max-width: 1600px) {
+  #inner {
+    margin-top: 0;
+    margin: auto;
+    overflow: visible;
+  }
+
+  .loop_item {
+    width: 200px;
+    height: 430px;
+    margin-right: 23px;
+  }
+
+  .next {
+    right: -86px;
+  }
+
+  .content {
+    width: 890px;
+  }
+
+  .next_s {
+    right: -86px;
+    background: #24222d;
+  }
+}
+
+/*# sourceMappingURL=information.css.map */
